@@ -1,4 +1,4 @@
-# helpJS
+# helpJS ⭐️
 
 These are some utils for javascript developer Yay!
 
