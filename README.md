@@ -119,8 +119,8 @@ module.exports = help
 ```
 
 
-## Useful
- You guys can copy paste those function that You need for your work no need to install heavy library.
+## Thanks
+ You guys can copy paste those function that You need for your work no need to install heavy library. Star ⭐️my repo if it helps you.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
