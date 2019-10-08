@@ -1,10 +1,12 @@
 # helpJS
 
+These are some utils for javascript developer Yay!
+
+
+```bash
 const help = {}
 
-/***/
-// ARRAY
-/***/
+## ARRAY
 
 help.difference = (a, b) => {
     const s = new Set(b);
@@ -45,23 +47,18 @@ help.bifurcate = (arr, filter) => arr.reduce((acc, val, i) => (acc[filter[i] ? 0
 help.averageBy = (arr, fn) =>
     arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val) => acc + val, 0) / arr.length;
 
-/***/
-// STRING
-/***/
+## STRING
+
 help.reverseString = str => [...str].reverse().join('');
 help.capitalize = (str) =>
     str.split(' ').map(([first, ...rest]) => first.toUpperCase() + rest.join('')).join(' ');
 
-/***/
-// HTML
-/***/
+## HTML
 
 help.bottomVisible = () => document.documentElement.clientHeight + window.scrollY >=
     (document.documentElement.scrollHeight || document.documentElement.clientHeight);
 
-/***/
-// URL
-/***/
+## URL
 
 help.currentURL = () => window.location.href;
 help.currentORIGIN = () => window.location.origin;
@@ -70,9 +67,7 @@ help.currentHOST = () => window.location.hostname;
 help.currentHOST = () => window.location.hostname;
 help.currentPROTOCOL = () => window.location.protocol;
 
-/***/
-// DATE
-/***/
+## DATE
 
 const timeEnum = {
     sec: 1000,
@@ -95,18 +90,14 @@ help.passedDayOfYear = date => Math.floor((date - new Date(date.getFullYear(), 0
 help.getDaysDiffBetweenDates = 
     (dateInitial = new Date(), dateFinal = new Date()) => Math.floor((dateFinal - dateInitial) / (1000 * 3600 * 24));
 
-/***/
-// MATH
-/***/
+## MATH
 
 help.degreesToRads = deg => (deg * Math.PI) / 180.0;
 help.radsToDegrees= deg => (deg  * 180.0) / Math.PI;
 help.digitize = n => n.toString().split('').map(a => parseInt(a))
 help.distance = ([x0, y0], [x1, y1]) => Math.hypot(x1 - x0, y1 - y0);
 
-/***/
-// JS
-/***/
+## JS
 
 help.isValidJSON = str => {
     try {
@@ -124,3 +115,12 @@ help.is = (type, val) => ![, null].includes(val) && val.constructor === type;
 help.getType = v => v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();
 
 module.exports = help
+
+```
+
+
+## Useful
+ You guys can copy paste those function that You need for your work no need to install heavy library.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
